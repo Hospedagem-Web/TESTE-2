@@ -1,0 +1,207 @@
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.header-image img {
+    max-height: 10px; /* Limita a altura da imagem */
+    width: 100%; /* Garante que a imagem ocupe toda a largura */
+    object-fit:contain; /* Mantém o foco no conteúdo principal da imagem */
+    margin: 0 auto; /* Centraliza caso necessário */
+}
+
+
+.text-limited {
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte para melhor visualização */
+    line-height: 1; /* Usa proporção em vez de valores fixos para adaptabilidade */
+    color: #333; /* Substitui #040404 por um cinza suave para reduzir contraste agressivo */
+    max-width: 1200px; /* Limita a largura máxima para melhor foco em telas grandes */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: justify; /* Mantém o texto bem alinhado para leitura fluida */
+    padding: 0px; /* Adiciona espaçamento interno moderado */
+    font-family: 'Arial', sans-serif; /* Define uma fonte segura e legível */
+}
+
+
+/* Card */
+.card {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão */
+.btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1c9314;
+}
+/* Smartphones */
+@media (max-width: 780px) {
+    body {
+        font-size: 10px;
+        /* Ajuste para leitura confortável */
+        padding: 10px;
+        height: 30px; /* Altura do cabeçalho */
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        font-size: 10px;
+        padding: 10px;
+    }
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+    body {
+        font-size: 10px;
+        padding: 10px;
+    }
+}
+
+/* Cabeçalho */
+.header-image {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    object-fit:contain;/* Faz a imagem preencher o espaço do cabeçalho */
+}
+
+.header-image img {
+    width: 100%;
+    height: max-content;
+    max-height: 340px;
+    object-fit: contain;
+}
+/*/////////////////////////////////////////////////////*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  header {
+    background-color: #1d1d1f;
+    box-shadow: 0px 1px 10px #1d1d1f;
+  }
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 6rem;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 145, 0);
+  }
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .list-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+  }
+  .list-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+  .nav-button button {
+    border: none;
+    background-color: rgb(255, 145, 0);
+    padding: 10px 25px;
+    border-radius: 5px;
+  }
+  .nav-button button a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .menu-mobile-icon {
+    display: none;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  @media screen and (max-width: 720px) {
+    .nav-bar {
+      padding: 1.5rem 6rem;
+      transition: 1s;
+      width: 100%; /* Faz com que o nav ocupe toda a largura da tela */
+   
+    }
+    .nav-list {
+      display: none;
+    }
+    .nav-button {
+      display: none;
+    }
+    .menu-mobile-icon {
+      display: block;
+    }
+    .menu-mobile-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .menu-mobile ul {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 1rem;
+    }
+    .menu-mobile .list-item {
+      display: block;
+      padding-top: 1.2rem;
+    }
+    .menu-mobile .nav-button {
+      display: block;
+      padding: 1rem 2rem;
+    }
+    .menu-mobile .nav-button button a {
+      font-size: 1.25em;
+    }
+    .menu-mobile .nav-button button {
+      width: 100%;
+    }
+    .open {
+      display: block;
+    }
+  }
+  
